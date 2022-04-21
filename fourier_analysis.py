@@ -124,7 +124,7 @@ def demo_data():
 
 if __name__ == '__main__':
     x,y = demo_data()
-    fa = FourierAnalyzer(
+    FourierAnalyzer(
         x_data=x,
         y_data=y,
         min_winding=4.0,
