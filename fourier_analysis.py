@@ -1,4 +1,5 @@
 import math
+from typing import List, Union, Any
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
@@ -16,9 +17,15 @@ def com(theta_data, r_data):
 
     
 class FourierAnalyzer:
-    
-    def __init__(self, x_data=None, y_data=None, min_winding=0.0,
-                 max_winding=1.0) -> None:
+    SCALAR_ARRAY_1D = Union[
+        List[float],
+        np.ndarray[Any, np.dtype[+np.ScalarType]]
+        ]
+    def __init__(self,
+            x_data: SCALAR_ARRAY_1D =None,
+            y_data: SCALAR_ARRAY_1D =None,
+            min_winding=0.0,
+            max_winding=1.0):
 
         # validate inputs
         if not isinstance(y_data, np.ndarray):
