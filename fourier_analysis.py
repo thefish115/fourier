@@ -17,13 +17,9 @@ def com(theta_data, r_data):
 
     
 class FourierAnalyzer:
-    SCALAR_ARRAY_1D = Union[
-        List[float],
-        np.ndarray[Any, np.dtype[+np.ScalarType]]
-        ]
     def __init__(self,
-            x_data: SCALAR_ARRAY_1D =None,
-            y_data: SCALAR_ARRAY_1D =None,
+            x_data=None,
+            y_data=None,
             min_winding=0.0,
             max_winding=1.0):
 
