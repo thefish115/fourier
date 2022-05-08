@@ -1,8 +1,8 @@
 # fourier
 This package contains one class intended for use:
   `FourierAnalyzer`.
-When the constructor is called a GUI will start with
-  a visualization related to the fourier transform
+When the constructor is called, a GUI will start with
+  an interactive visualization related to the fourier transform
   allowing the user to investigate periodicities in
   their data.
 
